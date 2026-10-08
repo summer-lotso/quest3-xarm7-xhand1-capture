@@ -1,0 +1,28 @@
+# data & runtime artifacts
+datasets/
+logs/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+build/
+releases/
+configs/*.local.yaml
+vendor/*
+!vendor/README.md
+
+# os / editor
+.DS_Store
+*.swp
+
+# device credentials and access tokens
+auth_info.json
+key.dat
+*.pem
+*.key
+.env
+.env.*

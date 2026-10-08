@@ -1,0 +1,19 @@
+# Generated from the verified xarm7-xhand1-deploy environment on 2026-09-16.
+PyYAML==6.0.2
+Pygments==2.21.0
+exceptiongroup==1.3.1
+iniconfig==2.3.0
+msgpack==1.1.1
+numpy==2.2.6
+pyzmq==26.4.0
+opencv-python-headless==4.12.0.88
+packaging==26.3
+pluggy==1.6.0
+pybind11==2.13.1
+pyrealsense2==2.56.5.9235
+pytest==8.4.2
+tomli==2.4.1
+typing_extensions==4.16.0
+websockets==15.0.1
+xarm-python-sdk==1.18.4
+# Install xhand_controller==1.1.8 from the local cp310 wheel documented in README.md.

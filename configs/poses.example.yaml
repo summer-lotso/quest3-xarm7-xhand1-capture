@@ -1,0 +1,11 @@
+# Named poses are recorded separately from hardware.local.yaml so a temporary
+# commissioning pose cannot accidentally become the deployment home.
+park_candidate:
+  status: unverified
+  xarm_position_rad: null
+  xhand_position_deg: null
+
+task_ready:
+  status: unset
+  xarm_position_rad: null
+  xhand_position_deg: null

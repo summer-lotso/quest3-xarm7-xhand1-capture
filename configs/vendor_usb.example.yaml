@@ -1,0 +1,35 @@
+# Copy into the licensed RobotEra software directory as config_meta_quest_usb.yaml.
+metadata:
+  version: v3
+teleops_type: meta_quest
+meta_quest:
+  rate: 100
+  publisher: zmq
+  camera_type: dummy
+  fps: 30
+  width: 1280
+  height: 720
+  see_through: true
+  start_web: false
+  zmq_address: tcp://*:49510
+  zmq_client_address: tcp://127.0.0.1:49510
+  port: 8010
+  use_retarget_v213: true
+  visualization: false
+hands_count:
+  use_hand_a: true
+  hand_a:
+    hand_id: 0
+    use_rs485: true
+    rs485_serial_port: /dev/ttyUSB0
+    rs485_baud_rate: 3000000
+    auth_info_file_path: auth_info.json
+    key_file_path: key.dat
+  use_hand_b: false
+  hand_b:
+    hand_id: 0
+    use_rs485: true
+    rs485_serial_port: /dev/ttyUSB1
+    rs485_baud_rate: 3000000
+    auth_info_file_path: auth_info.json
+    key_file_path: key.dat

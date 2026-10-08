@@ -1,0 +1,20 @@
+# Paths are relative to this YAML file; ~ expands to the user's home.
+# Copy to runtime.local.yaml and edit for the deployment computer.
+hardware_config: hardware.local.yaml
+vendor_dir: ../../teleop_software_pkg
+vendor_config: ../../teleop_software_pkg/config_meta_quest_usb.yaml
+vendor_python: ~/miniconda3/envs/xhand_tele_env_310/bin/python
+lerobot_src: ../../lerobot-v21/src
+task: Pick up object and place it in the tray
+root: ../datasets/quest3_xarm7_xhand1_v21
+repo_id: local/xarm7_xhand1_quest3
+format: lerobot-v2.1
+rate_hz: 20
+no_cameras: false
+no_wear: false
+translation_scale: 0.6
+max_translation_mm: 300.0
+max_rotation_rad: 2.0
+max_step_mm: 1.0
+max_orientation_step_rad: 0.015
+# execute and confirm are accepted only as explicit CLI flags.

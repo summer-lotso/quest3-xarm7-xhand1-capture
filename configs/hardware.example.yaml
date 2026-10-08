@@ -1,0 +1,38 @@
+# Copy to hardware.local.yaml and fill only verified, machine-local values.
+xarm_ip: null
+xarm_home_position_rad: null  # Seven measured joint angles, never copy Franka home.
+xarm_teleop_ready_position_rad: null  # Seven measured joints for the centered VR start pose.
+xarm_tcp_offset_mm_rad: null  # [x, y, z mm, roll, pitch, yaw rad] from flange to the selected control point.
+xarm_max_step_rad: 0.01
+xarm_joint_speed_rad_s: 0.05
+xarm_joint_acceleration_rad_s2: 0.1
+xarm_max_cartesian_step_mm: 3.0       # Maximum translation change per servo packet.
+xarm_max_orientation_step_rad: 0.03  # Maximum wrapped R/P/Y change per servo packet.
+xhand_protocol: RS485
+ethercat_interface: null
+xhand_serial_port: null
+xhand_baud_rate: 3000000
+xhand_hand_id: 0
+xhand_tor_max: null  # Explicit vendor raw value, not Nm or mA.
+xhand_kp: 80
+xhand_ki: 0
+xhand_kd: 0
+xhand_home_position_deg: null  # Twelve measured/validated joint angles.
+xhand_teleop_ready_position_deg: null  # Twelve commandable angles for VR startup.
+xhand_max_step_rad: 0.03
+xhand_max_tracking_error_rad: 0.08  # Maximum target/feedback divergence before aborting.
+xhand_state_read_retries: 3
+xhand_state_retry_delay_s: 0.1
+max_state_age_s: 0.2
+camera_fps: 30
+image_width: 640
+image_height: 480
+head_camera_serial: null
+front_left_camera_serial: null
+wrist_camera_serial: null
+head_camera_rotation_deg: 0
+front_left_camera_rotation_deg: 0
+wrist_camera_rotation_deg: 0
+policy_server_host: null
+policy_server_port: 8000
+policy_fps: 20
